@@ -1,0 +1,22 @@
+{
+  "name": "react-app-rewire-astroturf",
+  "description": "Add astroturf CSS-in-JS to your react-app-rewired config",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "standard --fix index.js"
+  },
+  "dependencies": {
+    "astroturf": "^0.9.21"
+  },
+  "peerDependencies": {
+    "react-app-rewired": "^2"
+  },
+  "devDependencies": {
+    "standard": "14.3.1"
+  }
+}
