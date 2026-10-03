@@ -12,6 +12,7 @@
 
 - [Usage](#usage)
 - [Install](#install)
+- [Development](#development)
 - [Contribute](#contribute)
 - [License](#License)
 
@@ -41,6 +42,21 @@ $ npm install react-app-rewire-astroturf
 $ # OR
 $ yarn add react-app-rewire-astroturf
 ```
+
+## Development
+
+Use Yarn Classic for a reproducible checkout:
+
+```sh
+yarn install --frozen-lockfile --ignore-scripts
+yarn lint
+yarn test
+```
+
+Lint checks do not modify files. The offline tests cover the rewire configuration
+contract and the dependency APIs used by the locked astroturf build-tool graph.
+The lockfile controls this repository's installs; applications consuming the
+published package resolve dependencies with their own package manager and lockfile.
 
 ## Contribute
 

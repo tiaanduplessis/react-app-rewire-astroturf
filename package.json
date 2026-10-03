@@ -8,7 +8,8 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "standard --fix index.js"
+    "lint": "standard index.js \"test/*.js\"",
+    "test": "node test/index.js && node test/dependencies.js"
   },
   "dependencies": {
     "astroturf": "^0.10.4"
